@@ -35,6 +35,7 @@ body {
   flex: 0 0 40px;
   animation: switch 4s ease-in-out infinite;
 }
+
 .logo__img {
   max-width: 100%;
 }
@@ -106,6 +107,95 @@ body {
   animation: title 4s;
 }
 
+.main {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  background-color: white;
+}
+
+.main__section {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(206, 202, 202);
+  gap: 10px;
+}
+
+.card {
+  flex-basis: 100%;
+  position: relative;
+  padding: 5px;
+  background-color: rgb(236, 231, 231);
+  color: rgb(59, 58, 58);
+}
+.card__figure {
+  position: relative;
+  margin: 0;
+}
+.card__img {
+  height: 250px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.card__time {
+  position: absolute;
+  bottom: 1em;
+  left: 0.5em;
+  color: rgb(252, 191, 79);
+}
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 0.3em;
+  padding-left: 0.3em;
+  padding-top: 0.6em;
+  background-color: rgb(238, 133, 150);
+  color: white;
+}
+.card__body {
+  padding: 3px;
+  columns: 2;
+}
+.card__text {
+  margin-top: 0;
+}
+.card__link {
+  display: block;
+  column-span: all;
+  margin-top: 1em;
+  text-decoration: none;
+  color: gray;
+}
+.main__footer {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.aside {
+  padding: 10px;
+  background-color: rgb(206, 202, 202);
+}
+.aside__title,
+.aside__text {
+  text-align: center;
+}
+.footer {
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgb(206, 202, 202);
+}
+.footer__content {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1em;
+  background-color: rgb(236, 231, 231);
+  text-align: center;
+}
+
 @media screen and (min-width: 400px) {
   body {
     font-size: 0.7rem;
@@ -116,13 +206,21 @@ body {
   .header__sup {
     flex-wrap: nowrap;
   }
+  .card {
+    flex: 1 0 34%;
+  }
+  .aside {
+    row-gap: 12px;
+  }
 }
 
 @media screen and (min-width: 800px) {
   body {
     font-size: 1rem;
   }
-  .header {
+  .header,
+  .main,
+  .footer {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -130,5 +228,18 @@ body {
   }
   .header {
     height: 200px;
+  }
+  .main {
+    flex-direction: row;
+    column-gap: 10px;
+  }
+  .main__section {
+    flex: 3 0 0px;
+  }
+  .card__img {
+    height: 280px;
+  }
+  .aside {
+    flex: 1 0 0px;
   }
 }
