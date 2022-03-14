@@ -98,3 +98,22 @@ body {
   height: 25px;
   background-color: rgb(230, 171, 64);
 }
+
+@media screen and (min-width: 400px) {
+  .header {
+    row-gap: 12px;
+  }
+  .logo,
+  .nav,
+  .social-media {
+    flex-basis: 0px;
+  }
+
+  .card {
+    flex: 1 0 34%;
+  }
+
+  .aside {
+    row-gap: 12px;
+  }
+}
