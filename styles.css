@@ -35,7 +35,17 @@ body {
   flex: 0 0 40px;
   animation: switch 4s ease-in-out infinite;
 }
-
+@keyframes switch {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(-1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .logo__img {
   max-width: 100%;
 }
@@ -105,6 +115,21 @@ body {
   text-align: center;
   opacity: 0.8;
   animation: title 4s;
+}
+
+@keyframes title {
+  0% {
+    color: rgb(168, 106, 117);
+    font-size: 1.3em;
+  }
+  50% {
+    color: rgb(218, 27, 62);
+    font-size: 1.7em;
+  }
+  100% {
+    transform: rgb(168, 106, 117);
+    font-size: 1.3em;
+  }
 }
 
 .main {
