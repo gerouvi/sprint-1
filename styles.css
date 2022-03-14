@@ -1,0 +1,100 @@
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.header {
+  padding: 25px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.header__sup {
+  padding: 25px;
+  background-color: rgb(50, 50, 141);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.logo {
+  flex: 1 1 140px;
+  height: 25px;
+  background-color: red;
+}
+.nav {
+  flex: 3 1 140px;
+  height: 25px;
+  background-color: red;
+}
+.social-media {
+  flex: 1 1 140px;
+  height: 25px;
+  background-color: red;
+}
+.header__inf {
+  padding: 25px;
+  background-color: rgb(182, 121, 7);
+}
+.header__text {
+  height: 25px;
+  background-color: rgba(219, 190, 25, 0.452);
+}
+
+.main {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  background-color: rgb(202, 202, 7);
+}
+
+.main__sup {
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+  gap: 25px;
+}
+
+.card {
+  height: 25px;
+  background-color: rgb(82, 134, 231);
+  flex-basis: 100%;
+}
+.main__footer {
+  height: 25px;
+  background-color: green;
+  flex-basis: 100%;
+}
+
+.aside {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  background-color: rgb(146, 98, 7);
+}
+.aside__title,
+.aside__text {
+  height: 25px;
+  background-color: lightblue;
+}
+
+.footer {
+  padding: 25px;
+  background-color: black;
+}
+.footer__content {
+  height: 25px;
+  background-color: rgb(230, 171, 64);
+}
