@@ -135,16 +135,13 @@ body {
 .main {
   padding-top: 5px;
   padding-bottom: 5px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   row-gap: 5px;
   background-color: white;
 }
 
 .main__section {
   padding: 5px;
-  display: flex;
-  flex-wrap: wrap;
   background-color: rgb(206, 202, 202);
   gap: 10px;
 }
@@ -196,7 +193,8 @@ body {
   color: gray;
 }
 .main__footer {
-  flex-basis: 100%;
+  padding: 0.5em;
+  grid-column: 1 / 3;
   text-align: center;
 }
 
@@ -231,8 +229,9 @@ body {
   .header__sup {
     flex-wrap: nowrap;
   }
-  .card {
-    flex: 1 0 34%;
+  .main__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   .aside {
     row-gap: 12px;
@@ -255,16 +254,10 @@ body {
     height: 200px;
   }
   .main {
-    flex-direction: row;
+    grid-template-columns: 3fr 1fr;
     column-gap: 10px;
   }
-  .main__section {
-    flex: 3 0 0px;
-  }
   .card__img {
-    height: 280px;
-  }
-  .aside {
-    flex: 1 0 0px;
+    height: 285px;
   }
 }
